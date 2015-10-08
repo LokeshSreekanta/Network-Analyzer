@@ -1,0 +1,215 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:scrollbars="horizontal|vertical">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp">
+        <TableRow android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:background="#F0F0F0"
+            android:stretchColumns="0,1">
+
+            <ImageView android:src="@drawable/ic_action_network_wifi"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:id="@+id/wifiSymbol"
+                android:paddingRight="10dp" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000099"
+                android:id="@+id/wifiName"
+                android:layout_column="1" />
+
+        </TableRow>
+    </TableLayout>
+
+    <GridLayout android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:paddingBottom="60dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="5dp"
+        android:paddingTop="25dp"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        android:columnCount="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:paddingTop="10dp">
+            <Button android:background="@drawable/ic_action_network_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:id="@+id/analyzer"
+                android:onClick="wifiAnalysis"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wifiAnalyze"
+                android:textColor="#000099"
+                android:id="@+id/wifiAnalyze" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0">
+
+            <Button
+                android:background="@drawable/ic_action_storage"
+                android:layout_height="75dp"
+                android:stateListAnimator="@null"
+                android:layout_width="wrap_content"
+                android:id="@+id/connectionDetails"
+                android:onClick="startConnectionDetails"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:paddingLeft="10dp"
+            android:layout_row="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000099"
+                android:gravity="center"
+                android:id="@+id/connectionText"
+                android:text="@string/connectionMainText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp">
+            <Button
+                android:background="@drawable/ic_action_map"
+                android:layout_height="75dp"
+                android:stateListAnimator="@null"
+                android:layout_width="wrap_content"
+                android:id="@+id/location"
+                android:onClick="startLocationDetect"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000099"
+                android:id="@+id/locationText"
+                android:gravity="center"
+                android:text="@string/locationMainText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:layout_column="0"
+            android:layout_row="2">
+            <Button
+                android:background="@drawable/ic_action_location_found"
+                android:layout_height="65dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/linkSpeed"
+                android:onClick="linkSpeedChecker"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000099"
+                android:gravity="center"
+                android:id="@+id/linkText"
+                android:text="@string/linkMainText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_column="1"
+            android:layout_row="2">
+            <Button
+                android:background="@drawable/ic_action_time"
+                android:layout_height="75dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/pingTime"
+                android:onClick="pingTime"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:paddingLeft="25dp"
+            android:layout_row="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000099"
+                android:id="@+id/pingText"
+                android:gravity="center"
+                android:text="@string/pingMainText"/>
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>
+</ScrollView>

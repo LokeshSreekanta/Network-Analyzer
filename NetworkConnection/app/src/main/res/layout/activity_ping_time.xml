@@ -1,0 +1,125 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="assignment3.android.com.networkconnection.PingTime">
+
+    <TextView android:layout_marginTop="20dp"
+        android:id="@+id/pingTransmissionStatus"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/packetTransmissionTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/packetDetails"
+        android:textSize="15sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine1"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+    <TextView android:layout_marginTop="20dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/roundTripTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:id="@+id/minimumTime"
+        android:text="@string/minimumTimeTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/minimumTimeValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:id="@+id/averageTimeTitleValue"
+        android:text="@string/averageTimeTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/averageTimeValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:id="@+id/maximumTimeTitle"
+        android:text="@string/maximumTimeTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/maximumTimeValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:id="@+id/standardTimeTitle"
+        android:text="@string/standardTimeTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/standardTimeValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </ScrollView>

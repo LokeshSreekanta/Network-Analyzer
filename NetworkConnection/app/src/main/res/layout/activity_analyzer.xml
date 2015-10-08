@@ -1,0 +1,22 @@
+<!--Wifi analyzer xml with list view to display all wifi networks-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    tools:context="assignment3.android.com.networkconnection.Analyzer"
+    android:baselineAligned="false">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="vertical"
+        android:background="@android:color/white"
+        android:listSelector="@android:color/darker_gray"
+        android:isScrollContainer="true"
+        />
+
+</LinearLayout>

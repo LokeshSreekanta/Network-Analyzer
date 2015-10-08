@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text="@string/userName"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/wifiUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="@string/password"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/wifiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:focusable="true"
+        android:padding="5dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPassword"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:onClick="setPasswordVisible"
+        android:text="@string/showPassword"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="145dp"
+            android:text="@string/connect"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Network Analyzer</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_login">Login</string>
+    <string name="welcome_info">Info</string>
+    <string name="welcome_title">NETWORK ANALYZER </string>
+    <string name="noConnection">WiFi Not Connected</string>
+    <string name="wifiAnalyze">WiFi Analyzer</string>
+    <string name="title_activity_analyzer">Analyzer</string>
+    <string name="signalStrength">Signal Strength</string>
+    <string name="userName">WiFi Name</string>
+    <string name="password">Password</string>
+    <string name="connect">Connect</string>
+    <string name="cancel">Cancel</string>
+    <string name="showPassword">Show Password</string>
+    <string name="dialogTitle">New Connection</string>
+    <string name="title_activity_new_connection">NewConnection</string>
+    <string name="title_activity_connection_details">ConnectionDetails</string>
+    <string name="connectionTitle">WiFi Name</string>
+    <string name="connectionStrengthTitle">Signal Strength</string>
+    <string name="connectionLinkTitle">Link Speed</string>
+    <string name="connectionIPTitle">IP Address</string>
+    <string name="connectionSecurityTitle">Security</string>
+    <string name="excellent">Excellent</string>
+    <string name="veryGood">Very Good</string>
+    <string name="good">Good</string>
+    <string name="weak">Weak</string>
+    <string name="poor">Poor</string>
+    <string name="bps">Mbps</string>
+    <string name="title_activity_location_details">LocationDetails</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_link_speed_checker">LinkSpeedChecker</string>
+    <string name="title_activity_ping_time">PingTime</string>
+    <string name="analyzerTitle">WiFi Analyzer</string>
+    <string name="backButton"> &lt;Back </string>
+    <string name="connectionTitleBar">Connection Details</string>
+    <string name="locationTitleBar">Location Detail</string>
+    <string name="pingTitleBar">Ping Packet Time</string>
+    <string name="linkTitleBar">Link Speed Checker</string>
+    <string name="closeInfo">CLOSE</string>
+    <string name="mainInfo">Network Connection Application helps to analyze Wifi Signal Strength, perform Speed check, and provides Location
+        and Connection information of connected WiFi </string>
+    <string name="dialogMainTitle">About</string>
+    <string name="connectionMainText">Connection Details</string>
+    <string name="locationMainText">Location Details</string>
+    <string name="linkMainText">Link Speed Checker</string>
+    <string name="pingMainText">Ping Time</string>
+    <string name="dialog_message">WiFi is disabled. Please enable WiFi in Settings.</string>
+    <string name="dialog_title">WiFi Disabled</string>
+    <string name="ok">OK</string>
+    <string name="packetTransmissionTitle">Packet Transmission Status</string>
+    <string name="roundTripTitle">Round Trip Details (ms)</string>
+    <string name="minimumTimeTitle">Minimum Time</string>
+    <string name="averageTimeTitle">Average Time</string>
+    <string name="maximumTimeTitle">Maximum Time</string>
+    <string name="standardTimeTitle">Standard Deviation Time</string>
+    <string name="nameOfWifi">Name</string>
+
+</resources>

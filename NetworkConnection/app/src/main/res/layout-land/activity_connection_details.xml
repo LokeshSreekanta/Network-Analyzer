@@ -1,0 +1,152 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="assignment3.android.com.networkconnection.ConnectionDetails">
+
+    <TextView
+        android:id="@+id/connectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text="@string/connectionTitle"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/connectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine1"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/connectionStrengthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="@string/connectionStrengthTitle"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/connectionSignalStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine2"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/connectionLinkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="@string/connectionLinkTitle"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/connectionLinkSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine3"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/connectionIPTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="@string/connectionIPTitle"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/connectionIPAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine4"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/connectionSecurityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:text="@string/connectionSecurityTitle"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/connectionSecurityType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/material_blue_grey_800"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/borderLine5"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:padding="5dp"
+        />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Link Speed Checker</title>
+<script type="text/javascript" src="file:///fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript">
+FusionCharts.setCurrentRenderer('javascript');
+    var csatGauge = new FusionCharts({
+        "type": "angulargauge",
+        "renderAt": "chart-container",
+        "width": "300",
+        "height": "300",
+        "dataFormat": "json",
+            "dataSource": {
+                   "chart": {
+        //"manageresize": "1",
+//"autoScale":"1",
+"origw": "300",
+        "origh": "300",
+        "palette": "3",
+"lowerLimitDisplay": "Good",
+      "upperLimitDisplay": "Bad",
+"alignCaptionWithCanvas":"1",
+"captionOnTop":"0",
+// "chartLeftMargin":"500",
+//"chartRightMargin":"500",
+//"chartTopMargin":"500",
+//"chartBottomMargin":"500",
+      "numberSuffix": "dBm",
+        "bgcolor": "FFFFFF",
+        "bgalpha": "100",
+        "lowerlimit": "0",
+        "upperlimit": "100",
+        "gaugestartangle": "240",
+        "gaugeendangle": "-60",
+        "gaugeouterradius": "120",
+        "gaugeinnerradius": "60%",
+        "gaugefillmix": "{light-10},{light-30},{light-20},{dark-5},{color},{light-30},{light-20},{dark-10}",
+        "gaugefillratio": "",
+        "basefontcolor": "000000",
+        "tooltipbgcolor": "FFFFFF",
+        "tooltipbordercolor": "333333",
+//"tickValueStep":"5",
+        "decimals": "1",
+        "gaugeoriginx": "150",
+        "gaugeoriginy": "150",
+        "showborder": "0",
+"showTickValues":"1",
+"showTickMarks":"1",
+"showToolTip":"1",
+"adjustTM":"1"
+    },
+    "colorrange": {
+        "color": [
+            {
+                "minvalue": "0",
+                "maxvalue": "30"
+            },
+            {
+                "minvalue": "30",
+                "maxvalue": "70"
+            },
+            {
+                "minvalue": "70",
+                "maxvalue": "100"
+            },
+          ]
+    },
+    "dials": {
+        "dial": [
+            {
+                "id": "Dial1",
+                "value": "30.232",
+"borderColor":"",
+                "basewidth": "6",
+                "topwidth": "1",
+                "editmode": "0",
+                "showvalue": "1",
+                "rearextension": "10",
+                "valuey": "270",
+"bgColor":"#398eb5",
+"toolText":"Neighbours"
+            },
+            {
+                "id": "Dial2",
+                "value": "20.362",
+"borderColor":"",
+                "basewidth": "6",
+                "topwidth": "1",
+                "editmode": "0",
+                "rearextension": "10",
+                "showvalue": "1",
+                "valuey": "250",
+"bgColor":"#646464"	,
+"toolText":"Me"
+            }
+        ]
+
+    },
+}
+      });
+
+    csatGauge.render();
+});
+</script>
+</head>
+
+<body >
+  <div id="chart-container" style="margin-left:27px;">An angular gauge will load here!</div>
+</body>
+</html
